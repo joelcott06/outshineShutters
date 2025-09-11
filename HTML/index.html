@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Outshine Shutters</title>
+  <meta name="description" content="Outshine Shutters" />
+  <link rel="icon" type="image/x-icon" href="../Images/Icon.jpg">
+  <link rel="stylesheet" href="../CSS/style1.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top notification / reassurance bar -->
+  <div class="topbar" role="region" aria-label="Assurances">
+    <div class="container topbar__content">
+      <p>Made-to-measure • Free home survey • Expert local advice</p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header" role="banner" aria-label="Primary">
+    <div class="container header__row">
+      <a class="logo" href="/" aria-label="Home">
+        <img src="../Images/Logo.png" alt="Brand logo" />
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul id="primaryMenu" class="nav__list">
+          <li class="nav__item nav__item--has-mega">
+            <button class="nav__link" data-mega="products" aria-expanded="false">Products</button>
+            <div class="mega" id="mega-products" role="region" aria-label="Products">
+              <div class="mega__col">
+                <h3 class="mega__title">Shutters</h3>
+                <ul class="mega__links">
+                  <li><a href="#">Full Height</a></li>
+                  <li><a href="#">Café Style</a></li>
+                  <li><a href="#">Tier-on-Tier</a></li>
+                  <li><a href="#">Bay Window</a></li>
+                </ul>
+              </div>
+ 
+              <div class="mega__col mega__col--image">
+                <img src="../Images/LivingRoom1.jpg" alt="Living room with shutters"/>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Inspiration</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Advice</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="button button--ghost" href="#cta">Find your local expert</a>
+        <a class="button button--primary" href="#cta">Book an appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Intro">
+      <picture>
+        <img src="../Images/KantoorShutters.JPG" alt="Bright room with plantation shutters" class="hero__image" />
+      </picture>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1>Made-to-measure Shutters</h1>
+        <p>Beautiful light control, tailored to your home—designed, measured, and expertly fitted.</p>
+
+
+        <ul class="hero__badges">
+          <li>Unbeatable Prices</li>
+          <li>Expert Advice</li>
+          <li>Up to 5-year warranty</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Steps / How it works -->
+    <section class="steps container" aria-label="How it works">
+      <h2>How it works</h2>
+      <div class="grid grid--3">
+        <div class="card step">
+          <span class="step__num">1</span>
+          <h3>Book a free appointment</h3>
+          <p>Tell us what you’re after and choose a time that suits you.</p>
+        </div>
+        <div class="card step">
+          <span class="step__num">2</span>
+          <h3>We measure & design</h3>
+          <p>Your local expert brings samples, measures precisely, and guides your choices.</p>
+        </div>
+        <div class="card step">
+          <span class="step__num">3</span>
+          <h3>Expert fitting</h3>
+          <p>We return to install for a perfect finish and long-lasting results.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories / Featured -->
+    <section class="categories" aria-label="Popular categories">
+      <div class="container">
+        <h2>Popular styles</h2>
+        <div class="grid grid--3">
+          <article class="card cat">
+            <img src="assets/category-1.jpg" alt="Full height shutters" />
+            <div class="card__body">
+              <h3>Full Height Shutters</h3>
+              <p>Clean lines, full coverage, timeless appeal.</p>
+              <a href="#" class="link">Explore</a>
+            </div>
+          </article>
+          <article class="card cat">
+            <img src="assets/category-2.jpg" alt="Café style shutters" />
+            <div class="card__body">
+              <h3>Café Style</h3>
+              <p>Privacy below, light above—perfect for street-level rooms.</p>
+              <a href="#" class="link">Explore</a>
+            </div>
+          </article>
+          <article class="card cat">
+            <img src="assets/category-3.jpg" alt="Roller blinds" />
+            <div class="card__body">
+              <h3>Roller Blinds</h3>
+              <p>Sleek, practical, and available in hundreds of fabrics.</p>
+              <a href="#" class="link">Explore</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials slider -->
+    <section class="testimonials" aria-label="Customer reviews">
+      <div class="container">
+        <h2>What our customers say</h2>
+        <div class="slider" id="reviewsSlider" aria-roledescription="carousel">
+          <button class="slider__control slider__control--prev" aria-label="Previous review" data-dir="prev">‹</button>
+          <ul class="slider__track">
+            <li class="slide" aria-label="Review 1 of 3">
+              <div class="card review">
+                <p class="review__quote">“Smooth process from start to finish. The shutters look amazing.”</p>
+                <p class="review__meta">— Alex P.</p>
+              </div>
+            </li>
+            <li class="slide" aria-label="Review 2 of 3">
+              <div class="card review">
+                <p class="review__quote">“Friendly team and meticulous fitting. Couldn’t be happier.”</p>
+                <p class="review__meta">— Sam R.</p>
+              </div>
+            </li>
+            <li class="slide" aria-label="Review 3 of 3">
+              <div class="card review">
+                <p class="review__quote">“Great value and brilliant advice on styles.”</p>
+                <p class="review__meta">— Priya K.</p>
+              </div>
+            </li>
+          </ul>
+          <button class="slider__control slider__control--next" aria-label="Next review" data-dir="next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container" aria-label="FAQ">
+      <h2>Frequently asked questions</h2>
+      <div class="accordion" id="faq">
+        <details class="accordion__item">
+          <summary>Do you offer free home surveys?</summary>
+          <div class="accordion__panel">
+            <p>Yes—appointments are free and there’s no obligation to buy.</p>
+          </div>
+        </details>
+        <details class="accordion__item">
+          <summary>How long does installation take?</summary>
+          <div class="accordion__panel">
+            <p>Most fittings are completed in a single visit once your order arrives.</p>
+          </div>
+        </details>
+        <details class="accordion__item">
+          <summary>What warranties do you provide?</summary>
+          <div class="accordion__panel">
+            <p>Up to 5 years depending on product range. Ask your local expert.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="cta" id="cta" aria-label="Book an appointment">
+      <div class="container cta__inner">
+        <h2>Ready to transform your windows?</h2>
+        <h3>Head to our About page to contact a member of the team for enquiries!</h3>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <img src="../Images/Logo.png" alt="Brand logo" class="footer__logo" />
+        <p>Local experts in made-to-measure shutters & blinds.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="#">Shutters</a></li>
+          <!--<li><a href="#">Blinds</a></li>
+          <li><a href="#">Curtains</a></li>-->
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About/Contact</a></li>
+          <li><a href="#">Find a local expert</a></li>
+          <!-- <li><a href="#">Careers</a></li> -->
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Guarantees</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Outshine Shutters. All rights reserved.</p>
+      <ul class="legal">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookies Consent</a></li>
+        <!--<li><a href="#">Terms</a></li> -->
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Cookie banner -->
+  <div class="cookie" role="dialog" aria-live="polite" aria-label="Cookie consent" id="cookieBanner" hidden>
+    <div class="cookie__inner container">
+      <p>We use cookies to improve your experience. By using this site, you accept cookies.</p>
+      <div class="cookie__actions">
+        <button class="button button--primary" id="cookieAccept">Accept</button>
+        <button class="button button--ghost" id="cookieDismiss">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JavaScript/indexJava.js" defer></script>
+</body>
+</html>
