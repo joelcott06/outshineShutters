@@ -24,6 +24,14 @@ body{
   line-height: 1.55;
 }
 
+/* Info */
+.IntroText{
+    color: var(--text);
+}
+.info{
+  color: var(--text);
+}
+
 /* Utilities */
 .container{ width:min(1120px, 92%); margin-inline:auto; }
 .grid{ display:grid; gap: 1.25rem; }
@@ -181,6 +189,14 @@ body{
 .footer__bottom{
   border-top:1px solid rgba(255,255,255,.1); display:flex; align-items:center; justify-content:space-between; padding: .75rem 0 2rem;
 }
+#companyno{
+  display: flex;
+  margin-left: 5%;
+}
+
+/* Privacy */
+
+
 .legal{ list-style:none; display:flex; gap:1rem; padding:0; margin:0; }
 @media (max-width: 900px){
   .footer__grid{ grid-template-columns: 1fr 1fr; }
