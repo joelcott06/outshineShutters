@@ -85,7 +85,7 @@ body{
 .nav__item--has-mega{ position:relative; }
 .nav__link{
   background: transparent; border: 0; font: inherit; cursor:pointer; color: var(--text);
-  padding:.5rem .75rem; border-radius: 8px;
+  padding:.5rem .75rem; border-radius: 8px; text-decoration: none;
 }
 .nav__link:hover{ background: var(--surface); }
 
