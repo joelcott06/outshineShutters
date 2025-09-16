@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Outshine Shutters - About Us</title>
+  <meta name="description" content="Outshine Shutters" />
+  <link rel="icon" type="image/x-icon" href="../Images/Icon.jpg">
+  <link rel="stylesheet" href="../CSS/style1.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top notification / reassurance bar -->
+  <div class="topbar" role="region" aria-label="Assurances">
+    <div class="container topbar__content">
+      <p>Website currently being developed - Some pages may not work as expected yet. Estimated Completion Date - 25/09/2025</p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header" role="banner" aria-label="Primary">
+    <div class="container header__row">
+      <a class="logo" href="/" aria-label="Home">
+        <img src="../Images/Logo.png" alt="Brand logo" />
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="primaryMenu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul id="primaryMenu" class="nav__list">
+          <li class="nav__item nav__item--has-mega">
+            <button class="nav__link" data-mega="products" aria-expanded="false">Products</button>
+            <div class="mega" id="mega-products" role="region" aria-label="Products">
+              <div class="mega__col">
+                <h3 class="mega__title">Shutters</h3>
+                <ul class="mega__links">
+                  <li><a href="#">Full Height</a></li>
+                  <li><a href="#">Café Style</a></li>
+                  <li><a href="#">Tier-on-Tier</a></li>
+                  <li><a href="#">Bay Window</a></li>
+                </ul>
+              </div>
+ 
+              <div class="mega__col mega__col--image">
+                <img src="../Images/LivingRoom1.jpg" alt="Living room with shutters"/>
+              </div>
+            </div>
+          </li>
+          <a class="nav__link" href="/">Home</a>
+         <a class="nav__link" href="/about-us/">About Us</a>
+          <a class="nav__link" href="/contact-us/">Contact Us</a>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a class="button button--ghost" href="/contact-us/#contact">Find your expert</a>
+        <a class="button button--primary" href="/#FAQs">Ready to book?</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Intro">
+      <picture>
+        <img src="../Images/aboutus.jpg" alt="Bright room with plantation shutters" class="hero__image" />
+      </picture>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <h1>About Us</h1>
+        <p>Serving the North of England from our Harrogate and Leeds branches</p>
+    
+    
+    </div>
+    </section>
+
+    <!-- Privacy Info-->
+     <section class="privacy" aria-label="Info">
+      <div class="container hero__content" class="about">
+        <h1 class="info">About Us</h1>
+        <p class="info">With over 20 years in the business, we offer a comprehensive range of products to suit all budgets.  We don’t do “Special Offers” or “Today Only” Prices.  The price we quote you will be the price you pay (*).</p>
+        <h3 class="info">HOW WE WORK</h3>
+        <p class="info">All our shutters are made to order and bespoke to your requirements.  We don’t use high pressure sales methods. We will quote you a price based on your own measurements, which will include delivery, fitting and a 5 year comprehensive warranty.  (of course, we will happily come out and take the measurements for you).</p>
+        <p class="info">We will explain the various options available from our product portfolio (Material, Colours, Louvre Widths, Splits and controls), and we will then put your quote together.</p>
+        <p class="info">If you’re happy, we will come and take manufacturing measurements, and finalise any of the finer details.  Then when your shutters arrive, we will check them and arrange to come and fit them for you.  Most jobs can be done in a day.</p>
+        
+
+      </div>
+
+     </section>
+
+    <!-- CTA band -->
+    <section class="cta" id="cta" aria-label="Book an appointment">
+      <div class="container cta__inner">
+        <h2>Ready to transform your windows?</h2>
+        <h3>Head to our About page to contact a member of the team for enquiries!</h3>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <img src="../Images/Logo.png" alt="Brand logo" class="footer__logo" />
+        <p>Local experts in made-to-measure shutters & blinds.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/#popshutters">Shutters</a></li>
+          <!--<li><a href="#">Blinds</a></li>
+          <li><a href="#">Curtains</a></li>-->
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about-us/">About</a></li>
+          <li><a href="/contact-us/#contact">Find a local expert</a></li>
+          <!-- <li><a href="#">Careers</a></li> -->
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="/#FAQs">FAQs</a></li>
+          <li><a href="/contact-us/#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Outshine Shutters. All rights reserved.</p>
+      <p id="companyno">OUTSHINE SHUTTERS & BLINDS LIMITED. REGISTERED IN ENGLAND AND WALES. COMPANY NUMBER: 12058890.</p>
+      <ul class="legal">
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <!-- <li><a href="#">Cookies Consent</a></li> -->
+        <!--<li><a href="#">Terms</a></li> -->
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Cookie banner -->
+  <div class="cookie" role="dialog" aria-live="polite" aria-label="Cookie consent" id="cookieBanner" hidden>
+    <div class="cookie__inner container">
+      <p>We use cookies to improve your experience. By using this site, you accept cookies.</p>
+      <div class="cookie__actions">
+        <button class="button button--primary" id="cookieAccept">Accept</button>
+        <button class="button button--ghost" id="cookieDismiss">Dismiss</button>
+      </div>
+    </div>
+  </div>
+  <script src="../JavaScript/indexJava.js" defer></script>
+</body>
+</html>
