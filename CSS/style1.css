@@ -87,6 +87,8 @@ body{
   background: transparent; border: 0; font: inherit; cursor:pointer; color: var(--text);
   padding:.5rem .75rem; border-radius: 8px; text-decoration: none;
 }
+
+
 .nav__link:hover{ background: var(--surface); }
 
 /* Mega menu */
@@ -222,3 +224,77 @@ body{
 /* Small polish */
 .site-header--shadow{ box-shadow: 0 8px 24px rgba(0,0,0,.06); }
  
+
+/* Base link styles inside mega menu */
+.mega__links a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 400;
+}
+
+.mega__links a:hover {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
+/* Submenu (flyout) styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* aligns to the right side */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  min-width: 200px;
+  z-index: 999;
+  margin-left: auto;
+}
+
+/* Make submenu items stack vertically */
+.submenu li {
+  list-style: none;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 16px;
+  color: #111;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.submenu a:hover {
+  background: #f5f5f5;
+}
+
+/* Ensure submenu attaches to parent without a gap */
+.has-submenu {
+  position: relative; /* anchor point for submenu */
+}
+
+/* Keep submenu visible when hovering parent OR submenu */
+.has-submenu:hover > .submenu,
+.has-submenu .submenu:hover {
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
