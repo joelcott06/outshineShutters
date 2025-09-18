@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
   contents: read
@@ -13,6 +14,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run Report
+
+      - name: Run Bearer SAST
         id: report
         uses: bearer/bearer-action@v2
+        with:
+          severity: critical,high   # only include HIGH & CRITICAL
+          exit-code: 1              # fail if those are found
+          format: sarif             # optional: json, sarif, html, etc.
+
+
+#name: Bearer
+
+#on:
+#  push:
+#    branches:
+#      - main
+
+#permissions:
+#  contents: read
+
+#jobs:
+#  rule_check:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Run Report
+#        id: report
+#        uses: bearer/bearer-action@v2
