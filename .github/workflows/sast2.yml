@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
   contents: read
@@ -13,6 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run Report
+
+      - name: Run Bearer SAST Report
         id: report
         uses: bearer/bearer-action@v2
+        with:
+          fail-on: high         # ❌ fail job only if HIGH or CRITICAL findings exist
+          format: json,html     # ✅ generate reports in JSON + HTML
+          output: reports       # ✅ save reports under ./reports/
+
+      - name: Upload Bearer Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: bearer-sast-reports
+          path: reports
