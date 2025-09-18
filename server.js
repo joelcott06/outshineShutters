@@ -4,16 +4,24 @@ const path = require("path");
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Middleware to force HTTPS
+// Trust proxy headers (needed if behind load balancer / reverse proxy)
+app.enable("trust proxy");
+
+// Middleware to force HTTPS in production
 app.use((req, res, next) => {
-  if (req.headers["x-forwarded-proto"] !== "https" && process.env.NODE_ENV === "production") {
-    return res.redirect("https://" + req.headers.host + req.url);
+  if (process.env.NODE_ENV === "production" && req.secure === false) {
+    // Use relative redirect, not raw host header
+    return res.redirect(301, "https://" + req.hostname + req.originalUrl);
   }
   next();
 });
 
-// Serve static files
-app.use(express.static(path.join(__dirname)));
+// Serve only from a dedicated public folder
+app.use(express.static(path.join(__dirname, "public"), {
+  dotfiles: "ignore", // prevent serving .env, .gitignore, etc.
+  index: "index.html",
+  maxAge: "1d" // optional: cache static assets
+}));
 
 // Start server
 app.listen(port, () => {
