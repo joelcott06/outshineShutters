@@ -19,9 +19,10 @@ jobs:
         id: report
         uses: bearer/bearer-action@v2
         with:
-          fail-on: high         # ❌ fail job only if HIGH or CRITICAL findings exist
-          format: json,html     # ✅ generate reports in JSON + HTML
-          output: reports       # ✅ save reports under ./reports/
+          severity: critical,high     # only include CRITICAL and HIGH findings
+          exit-code: 1                # fail if those are found
+          format: json,html           # generate both JSON and HTML reports
+          output: reports             # save reports under ./reports/
 
       - name: Upload Bearer Reports
         uses: actions/upload-artifact@v4
