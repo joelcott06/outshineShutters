@@ -18,3 +18,7 @@ jobs:
       - name: Run Bearer SAST
         id: report
         uses: bearer/bearer-action@v2
+        with:
+          severity: critical,high   # only include HIGH & CRITICAL
+          exit-code: 1              # fail if those are found
+          format: sarif             # optional: json, sarif, html, etc.
