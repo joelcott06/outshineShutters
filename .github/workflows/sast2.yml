@@ -24,7 +24,7 @@ jobs:
           output: reports       # ✅ save reports under ./reports/
 
       - name: Upload Bearer Reports
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: bearer-sast-reports
           path: reports
