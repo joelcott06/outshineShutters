@@ -298,3 +298,13 @@ body{
   margin-top: 8px;
   vertical-align: middle;
 }
+
+.subjectc {
+  size: 6px;
+  color: var(--text);
+}
+
+.info2{
+  color: var(--text);
+  margin-left: -15%;
+}
