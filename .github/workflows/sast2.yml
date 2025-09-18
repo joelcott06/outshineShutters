@@ -15,17 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Run Bearer SAST Report
+      - name: Run Bearer SAST
         id: report
         uses: bearer/bearer-action@v2
         with:
-          fail-on-severity: critical,high   # 🚨 fail only on high/critical
-          exit-code: 1                      # enforce exit code if above found
-          format: sarif                     # ✅ only one format per run
-          output: reports/report.sarif      # save under ./reports/
-
-      - name: Upload Bearer Reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: bearer-sast-reports
-          path: reports
+          severity: critical,high   # only include HIGH & CRITICAL
+          exit-code: 1              # fail if those are found
+          format: sarif             # optional: json, sarif, html, etc.
