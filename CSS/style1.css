@@ -72,7 +72,7 @@ body{
 .header__row{
   display:flex; align-items:center; justify-content:space-between; padding:.75rem 0; gap:1rem;
 }
-.logo img{ height: 100px; width: 100px;}
+.logo img{ height: 100px; width: 100px;} 
 .header__actions{ display:flex; gap:.5rem; }
 
 /* Nav */
@@ -288,7 +288,6 @@ body{
   padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 0 4px;
@@ -297,4 +296,21 @@ body{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.subjectc {
+  font-size: small;
+  margin-top: 3%;
+  color: var(--text);
+}
+
+.info2{
+  color: var(--text);
+  margin-left: -15%;
+}
+
+.imgpos{
+  margin-left: auto;
+  margin-right: 0%;
+  margin-top: -30%;
 }
