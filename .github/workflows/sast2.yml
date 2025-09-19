@@ -18,9 +18,3 @@ jobs:
       - name: Run Bearer SAST
         id: report
         uses: bearer/bearer-action@v2
-        with:
-          format: sarif                     # choose output format
-          # Include all severities in the report:
-          severity: critical,high,medium,low,warning
-          # Fail pipeline only on high/critical:
-          args: --fail-on-severity critical,high
