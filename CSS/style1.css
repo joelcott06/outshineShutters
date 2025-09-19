@@ -288,7 +288,6 @@ body{
   padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 0 4px;
@@ -300,7 +299,8 @@ body{
 }
 
 .subjectc {
-  size: 6px;
+  font-size: small;
+  margin-top: 3%;
   color: var(--text);
 }
 
