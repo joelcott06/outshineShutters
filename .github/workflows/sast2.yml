@@ -19,6 +19,8 @@ jobs:
         id: report
         uses: bearer/bearer-action@v2
         with:
-          severity: critical,high   # only include HIGH & CRITICAL
-          exit-code: 1              # fail if those are found
-          format: sarif             # optional: json, sarif, html, etc.
+          format: sarif                     # choose output format
+          # Include all severities in the report:
+          severity: critical,high,medium,low,warning
+          # Fail pipeline only on high/critical:
+          args: --fail-on-severity critical,high
